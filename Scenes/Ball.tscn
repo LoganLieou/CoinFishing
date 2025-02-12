@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="SpatialMaterial" id=1]
+vertex_color_use_as_albedo = true
+vertex_color_is_srgb = true
+albedo_color = Color( 0.905882, 0.14902, 0.14902, 1 )
+
+[node name="Ball" type="Spatial"]
+
+[node name="CSGMesh" type="CSGMesh" parent="."]
+
+[node name="CSGSphere" type="CSGSphere" parent="CSGMesh"]
+material = SubResource( 1 )
